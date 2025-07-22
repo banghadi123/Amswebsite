@@ -256,15 +256,20 @@ footer {
 }
 
 /* Ukuran logo lebih besar di HP */
-@media (max-width: 576px) {
-  .small-logo {
-    width: 150px; /* naik dari 130px */
-  }
+  @media (max-width: 576px) {
+    .hero-content-wrapper img {
+      max-width: 100%;
+    }
 
-  .main-logo {
-    width: 250px; /* naik dari 220px */
+    .hero-content-wrapper img[alt="Logo Utama"] {
+      width: 180px !important;
+    }
+
+    .hero-content-wrapper img[alt="Logo Kecil Kiri"],
+    .hero-content-wrapper img[alt="Logo Kecil Kanan"] {
+      width: 70px !important;
+    }
   }
-}
 </style>
 </head>
 <body>
@@ -323,19 +328,19 @@ footer {
 </div>
 
   <!-- Hero Section -->
- <main>
-  
+ <main>  
 <section class="hero">
-  <div class="container d-flex align-items-center justify-content-center flex-wrap gap-3 hero-content-wrapper">
+  <div class="container text-center hero-content-wrapper">
+  <!-- Logo utama -->
+  <img src="img/yayasan.png" alt="Logo Utama" style="width: 250px; height: auto;">
 
-    <!-- Logo kecil kiri -->
-    <img src="img/ams.png" alt="Logo Kecil Kiri" style="width: 120px; height: auto;">
+  <!-- Logo kecil bawah (dalam satu baris tengah) -->
+  <div class="d-flex justify-content-center align-items-center gap-4 mt-3">
+    <img src="img/ams.png" alt="Logo Kecil Kiri" style="width: 100px; height: auto;">
+    <img src="img/tpq.png" alt="Logo Kecil Kanan" style="width: 100px; height: auto;">
+  </div>
+</div>
 
-    <!-- Logo utama -->
-    <img src="img/yayasan.png" alt="Logo Utama" style="width: 250px; height: auto;">
-
-    <!-- Logo kecil kanan -->
-    <img src="img/tpq.png" alt="Logo Kecil Kanan" style="width: 120px; height: auto;">
 
     <!-- Tulisan -->
     <div class="text-center w-100 mt-4">
