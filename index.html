@@ -255,6 +255,16 @@ footer {
   height: auto;
 }
 
+/* Ukuran logo lebih besar di HP */
+@media (max-width: 576px) {
+  .small-logo {
+    width: 150px; /* naik dari 130px */
+  }
+
+  .main-logo {
+    width: 250px; /* naik dari 220px */
+  }
+}
 </style>
 </head>
 <body>
@@ -316,51 +326,6 @@ footer {
  <main>
   
 <section class="hero">
-  <style>
-  .hero {
-    padding: 30px 10px;
-  }
-
-  .hero-content-wrapper {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .hero-logo {
-    width: 120px;
-    height: auto;
-  }
-
-  .hero-main-logo {
-    width: 250px;
-    height: auto;
-  }
-
-  @media (max-width: 576px) {
-    .hero-content-wrapper {
-      flex-wrap: wrap;
-    }
-
-    .hero-logo {
-      width: 80px;
-    }
-
-    .hero-main-logo {
-      width: 180px;
-    }
-
-    .hero h1 {
-      font-size: 1.3rem;
-    }
-
-    .hero p {
-      font-size: 0.95rem;
-    }
-  }
-</style>
   <div class="container d-flex align-items-center justify-content-center flex-wrap gap-3 hero-content-wrapper">
 
     <!-- Logo kecil kiri -->
@@ -660,7 +625,7 @@ footer {
 
 <script>
   const text2 = "السلام عليكم ورحمة الله وبركاته";
-  const paragraphText = "SELAMAT DATANG DI YAYASAN PENDIDIKAN ISLAM DAN SOSIAL"; 
+  const paragraphText = "WELCOME TO THE FOUNDATION FOR ISLAMIC AND SOCIAL EDUCATION"; 
   const extraText = "ALMANHAJUSSAWI DHIYAU NUSANTARA";
   
   const typedText2 = document.getElementById("typed-text-2");
